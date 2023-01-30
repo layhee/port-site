@@ -20,12 +20,13 @@ body {
 
 :where(h1, h2, h3, h4) {
     color: rgb(255, 255, 255);
-    font-family: 'brevia', sans-serif;
+    font-family: brevia, sans-serif;
     font-weight: 600;
 }
 h1{
     font-size: 4rem;
     letter-spacing: -.25rem;
+    font-style: italic;
 }
 h2{
     font-size: 2.2rem;
@@ -77,7 +78,7 @@ i{
     /* transition: ease 260ms; */
 }
 i:hover{
-    color:rgb(252, 214, 45);
+    /* color:rgb(252, 214, 45); */
     transform: scale(1.2);
     transition: ease 260ms;
 }
@@ -104,14 +105,11 @@ i:hover{
     color: transparent;
     transition: ease 323ms;
 }
-.highlight{
-    background: rgb(255, 255, 255);
-    color: rgb(22,22,22)
-}
 .stay{
     font-family: 'Sofia Sans';
     font-weight: 700;
     font-size: 2rem;
+    margin: 12px 0;
     padding: 8px 12px;
     color: rgb(22,22,22);
     background-color: rgb(255, 255, 255);
@@ -124,6 +122,9 @@ i:hover{
 .stay:active{
     transform: rotate(6deg)
 }
+*   :focus{
+    outline: 3px dotted;
+}
 .skills-icons{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -135,6 +136,9 @@ i:hover{
 .contact-icons{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+}
+.contact-icons i:hover{
+    color: rgb(22,22,22)
 }
 .fa-spin{
     --fa-animation-duration: 10s;
@@ -231,11 +235,7 @@ p{
     color: rgba(23,23,23,1);
   } 
   a {
-    /* display: block; */
-    /* padding: 10px 40px; */
     text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
   }
   
   .menuNav li:first-child {
@@ -287,7 +287,7 @@ p{
     color: rgb(239, 114, 51);
 }
 .red{
-    color: rgb(249, 51, 11);
+    color: rgb(243, 78, 7);
 }
 .typography{
     font-family: 'alkaline caps', script;

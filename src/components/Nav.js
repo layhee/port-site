@@ -14,7 +14,7 @@ const Nav = () => {
         <button onClick={handleToggle}>{navbarOpen ? <i className="fa-regular fa-circle-xmark black"></i> : <i className="fa-solid fa-bars"></i>}</button>
         <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`} onClick={() => closeMenu()}>
             <li>
-                <a href="#intro"><i className="fa-solid fa-burst fa-beat"></i> Intro</a>
+                <a href="#intro"><i className="fa-solid fa-burst fa-beat"></i> Hello</a>
             </li>
             <li>
                 <a href="#skills"><i className="fa-solid fa-gear fa-spin"></i> Skills</a>

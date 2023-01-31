@@ -32,7 +32,7 @@ h2{
     font-family: 'Sofia Sans', sans-serif;
 }
 h3{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-family: 'Sofia Sans', sans-serif;
     margin-bottom: 16px;
 }
@@ -139,18 +139,27 @@ svg:hover{
     color: rgb(22,22,22);
     transition: ease 320ms;
 }
-.fa-spin{
-    --fa-animation-duration: 10s;
+.spin{
+    animation-name: spin;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
 }
-.fa-beat{
-    --fa-beat-scale: 1.2;
-    --fa-animation-duration: 2s;
+.beat{
+    animation: beat 2s infinite alternate;
+	transform-origin: center;
 }
-.fa-shake{
-    --fa-animation-duration: 4s;
+@keyframes spin {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
 }
-.fa-bounce{
-    --fa-animation-duration: 2s;
+@keyframes beat{
+	0% { transform: scale(1);
+    }
+    100% {transform: scale(1.2)}
 }
 p{
     /* font-family: 'Fragment Mono', sans-serif; */
@@ -340,7 +349,7 @@ button{
     font-family: 'Rift';
     font-weight: 700;
     font-size: 2rem;
-    color: dodgerblue;
+    color: rgb(255, 255, 255);
     border-radius: 6px 6px;
     transition: ease 100ms;
     cursor: pointer;
@@ -451,7 +460,7 @@ button:hover{
         flex-direction: column;
       }
     h1{
-        font-size: 1.8rem;
+        font-size: 1.9rem;
         letter-spacing: -.05rem;
         margin: 12px 0;
     }
@@ -481,7 +490,7 @@ button:hover{
         align-items: center;
     }
     .port-pieces li img{
-        width: 86px;
+        width: 124px;
         margin: 0 16px;
     }
     .menuNav{
@@ -519,5 +528,8 @@ button:hover{
      .nav button{
         top: 26px;
         left: 26px;
+     }
+     .skills-text{
+        line-height: 1.08rem;
      }
 }

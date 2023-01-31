@@ -10,6 +10,7 @@ const About = (props) => {
                 <h3>I made a <span className="red">career change</span> away from <span className="red">tech</span>/<span className="red">design</span> in <span className="red">2014</span> to work <span className="red">in</span>, <span className="red">on</span>, and <span className="red">around bicycles</span>. Though I love riding <span className="red">road</span>, <span className="red">dirt</span>, <span className="red">mountain</span>, and more dirt, it's time to come back to what I initially set out to do. I hope I'm able to <span className="red">ride bikes</span> well into my ripe old age.</h3>
                 <h3>I'm completing a <span className="yellow">Software Engineering</span> immersive bootcamp through 
                 <a target="_blank" rel="noreferrer" href="https://generalassemb.ly/education/software-engineering-immersive" className="yellow"> General Assembly</a> learning <span className="yellow">Full Stack Web Development</span> wrapping up in <span className="yellow">February 2023</span>.</h3>
+                <h3>I'm a <span className="blue">dedicated worker</span>, I'm great at '<span className="blue">figuring it out</span>', and I'm ready to <span className="blue">hit the ground running</span>. Thanks for reading. </h3>
             </div>
             <div className="next">
                 <a href="#intro"><RiArrowUpCircleLine className="fa-beat"/></a>

@@ -27,7 +27,8 @@ const Portfolio = (props) => {
                 </dd>
         </div>
         <div className="next">
-            <a href="#skills"><RiArrowUpCircleLine/></a>My Work<a href="#about"><RiArrowDownCircleLine/></a>
+            {/* <a href="#skills"><RiArrowUpCircleLine/></a> */}
+            <a href="#about"><RiArrowDownCircleLine/></a>
         </div>
         </>
     );

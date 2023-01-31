@@ -1,6 +1,5 @@
 import React, { useState } from "react"
-import { RiSettings5Line, RiUserSmileFill } from "react-icons/ri"
-import { FaRegSmile, FaCog, FaLaptopCode, FaRegHandSpock } from "react-icons/fa"
+import { FaRegSmile, FaCog, FaLaptopCode, FaRegHandSpock, FaBars, FaRegTimesCircle } from "react-icons/fa"
 
 const Nav = () => {
     const [navbarOpen, setNavbarOpen] = useState(false)
@@ -12,19 +11,19 @@ const Nav = () => {
       }
   return (
     <div className="nav">
-        <button onClick={handleToggle}>{navbarOpen ? <i className="fa-regular fa-circle-xmark"></i> : <i className="fa-solid fa-burger"></i>}</button>
+        <button onClick={handleToggle}>{navbarOpen ? <FaRegTimesCircle className="black"/> : <FaBars/>}</button>
         <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`} onClick={() => closeMenu()}>
             <li>
-                <FaRegHandSpock className="fa-beat"/><a href="#intro">Hello</a>
+                <FaRegHandSpock className="beat"/><a href="#intro">Hello</a>
             </li>
             <li>
-               <FaCog className="fa-spin"/>  <a href="#skills">Skills</a>
+               <FaCog className="spin"/>  <a href="#skills">Skills</a>
             </li>
             <li>
-                <FaLaptopCode className="fa-beat"/> <a href="#work">Work</a>
+                <FaLaptopCode className="beat"/> <a href="#work">Work</a>
             </li>
             <li>
-                <FaRegSmile className="fa-spin"/><a href="#about"> About</a>
+                <FaRegSmile className="spin"/><a href="#about"> About</a>
             </li>
         </ul>
     </div>

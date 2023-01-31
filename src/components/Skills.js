@@ -20,7 +20,8 @@ const Skills = () => {
          <h3>And finally, as a student in <span className="yellow">General Assembly</span>'s <span className="yellow">Software Engineering Immersive</span> bootcamp, I've learned <span className="yellow">front end</span>, <span className="yellow">back end</span>, AKA <span className="yellow">full stack development</span> using languages, frameworks, libraries and software such as: <span className="yellow">Mongo</span>, <span className="yellow">Express.js</span>, <span className="yellow">React.js</span>, <span className="yellow">Node.js</span>, <span className="yellow">MongoDB</span>, <span className="yellow">Python</span>, <span className="yellow">Django</span>, <span className="yellow">Svelte</span>, <span className="yellow">MongoDB</span>, <span className="yellow">Tailwind CSS</span>, <span className="yellow">Firebase</span>, <span className="yellow">PostgreSQL</span>, <span className="yellow">Figma</span>, and <span className="yellow">Github.</span> </h3>
          <button className="button stay" onClick={handleClick}>Highlights, please!</button>
          <div className="next">
-            <a href="#intro"><RiArrowUpCircleLine/></a><a href="#work">My Work<RiArrowDownCircleLine/></a>
+            {/* <a href="#intro"><RiArrowUpCircleLine/></a>  */}
+            <a href="#work"><RiArrowDownCircleLine/></a>
         </div>
     </div>
   )

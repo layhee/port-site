@@ -18,7 +18,7 @@ const Introduction = (props) => {
                     <h3><a href="mailto:send@lehi.work" target="_blank" rel="noreferrer"><FaEnvelope/></a></h3>
                 </div>
                 <div className="next">
-                    <a href="#skills"><RiArrowDownCircleLine className="fa-beat"/></a>
+                    <a href="#skills"><RiArrowDownCircleLine className="beat"/></a>
                 </div>
             </div>
         </div>

@@ -139,18 +139,27 @@ svg:hover{
     color: rgb(22,22,22);
     transition: ease 320ms;
 }
-.fa-spin{
-    --fa-animation-duration: 10s;
+.spin{
+    animation-name: spin;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
 }
-.fa-beat{
-    --fa-beat-scale: 1.2;
-    --fa-animation-duration: 2s;
+.beat{
+    animation: beat 2s infinite alternate;
+	transform-origin: center;
 }
-.fa-shake{
-    --fa-animation-duration: 4s;
+@keyframes spin {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
 }
-.fa-bounce{
-    --fa-animation-duration: 2s;
+@keyframes beat{
+	0% { transform: scale(1);
+    }
+    100% {transform: scale(1.2)}
 }
 p{
     /* font-family: 'Fragment Mono', sans-serif; */

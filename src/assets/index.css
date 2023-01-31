@@ -451,7 +451,7 @@ button:hover{
         flex-direction: column;
       }
     h1{
-        font-size: 1.8rem;
+        font-size: 1.9rem;
         letter-spacing: -.05rem;
         margin: 12px 0;
     }
@@ -481,7 +481,7 @@ button:hover{
         align-items: center;
     }
     .port-pieces li img{
-        width: 86px;
+        width: 124px;
         margin: 0 16px;
     }
     .menuNav{
@@ -519,5 +519,8 @@ button:hover{
      .nav button{
         top: 26px;
         left: 26px;
+     }
+     .skills-text{
+        line-height: 1.08rem;
      }
 }

@@ -1,3 +1,5 @@
+import { RiArrowDownCircleLine, RiArrowUpCircleLine } from "react-icons/ri"
+
 const Portfolio = (props) => {
 
     return (
@@ -25,7 +27,7 @@ const Portfolio = (props) => {
                 </dd>
         </div>
         <div className="next">
-        <a href="#skills"><i className="fa-solid fa-circle-up"></i></a><a href="#about">About Me<i className="fa-solid fa-circle-down"></i></a>
+            <a href="#skills"><RiArrowUpCircleLine/></a>My Work<a href="#about"><RiArrowDownCircleLine/></a>
         </div>
         </>
     );

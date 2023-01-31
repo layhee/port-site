@@ -340,7 +340,7 @@ button{
     font-family: 'Rift';
     font-weight: 700;
     font-size: 2rem;
-    color: dodgerblue;
+    color: rgb(255, 255, 255);
     border-radius: 6px 6px;
     transition: ease 100ms;
     cursor: pointer;

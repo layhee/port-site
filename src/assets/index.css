@@ -26,6 +26,7 @@ h1{
     font-weight: 500;
     font-size: 4rem;
     letter-spacing: -.10rem;
+    margin: 16px 0;
 }
 h2{
     font-size: 2.2rem;
@@ -83,10 +84,10 @@ svg:hover{
 .mug{
     width: 280px;
     height: 280px;
-    border-radius: 140px;
+    border-radius: 24%;
     margin: 18px 28px;
     border: 16px solid dodgerblue;
-    box-shadow: 2px 2px 6px rgba(23,23,23,.4);
+    box-shadow: 4px 4px 0 rgba(23,23,23,1);
     background-image: url(/public/img/head-cropped.jpg);
     background-size: contain;
 }
@@ -99,7 +100,7 @@ svg:hover{
     text-shadow: 2px 2px 6px rgba(22,22,22, .5);
     transition: ease 323ms;
 }
-.tldr :not(.yellow, .stay){
+.tldr :not(.yellow, .next, .stay){
     color: transparent;
     transition: ease 323ms;
 }
@@ -113,15 +114,13 @@ svg:hover{
     background-color: rgb(255, 255, 255);
     border-radius: 6px 6px;
     transform: rotate(-6deg);
-    box-shadow: -2px 3px 3px rgba(22, 87, 109, 0.5);
+    box-shadow: -2px 3px 3px rgba(22, 87, 109, 0.4);
     transition: ease 100ms;
     cursor: pointer;
 }
 .stay:active{
-    transform: rotate(6deg)
-}
-*   :focus{
-    outline: 3px dotted;
+    transform: rotate(6deg);
+    box-shadow: 3px 2px 0 rgb(22,22,22);
 }
 .skills-icons{
     display: grid;
@@ -162,9 +161,7 @@ svg:hover{
     100% {transform: scale(1.2)}
 }
 p{
-    /* font-family: 'Fragment Mono', sans-serif; */
     color: #fff;
-    font-size: .9rem;
 }
 .div-1{
     background: linear-gradient(-120deg, #ff2a00c5, #f8ba2b, #f97f14);
@@ -175,7 +172,7 @@ p{
     background-size: 250% 250%;  
 }
 .div-3{
-    background: url(https://dev.lehi.work/img/self-bike.jpg) no-repeat center center fixed;
+    background: url(/public/img/bike-bg.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 .div-4{
@@ -187,7 +184,6 @@ p{
     flex-direction: column;
     justify-content: space-evenly;
     height: 100vh;
-    /* justify-content: center; */
     align-items: center;
     outline: 15px solid #fff;
     outline-offset: -15px;
@@ -313,26 +309,20 @@ a:hover.red{
     text-shadow: 2px 2px 2px rgba(52, 52, 52, .6);
 }
 .port-pieces{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.8em;
-    margin: 22px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6em;
     font-family: 'Sofia Sans';
     color: rgb(255, 255, 255);
 }
-.port-pieces li img{
-    filter: blur(.5px);
-    transition: ease 260ms;
-    position: inline-block;
-    z-index: -1000;
+.port-pieces li a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
-.port-pieces li img:hover{
-    filter: blur(0);
-    transform: scale(1.4);
-    transition: ease 260ms;
-    position: inline-block;
-    z-index: 1000;
-    box-shadow: 2px 2px 6px rgba(23,23,23,.4);
+.bars{
+    display: none;
 }
 li img{
     width: 100%;
@@ -360,11 +350,15 @@ button{
 button:hover{
     transition: ease 100ms;
 }
-
+.work h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 22px;
+}
 @media screen and (min-width: 1266px){
     .port-pieces{
         max-width: 1266px;
-        gap: 2em;
+        gap: 1.6em;
         grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -399,25 +393,16 @@ button:hover{
     }
     .work{
         font-size: 1.4rem;
-        /* margin: 12px 42px; */
-        max-width: 80%;
+        max-width: 80vw;
         text-align: center;
     }
     .port-pieces{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.8em;
-        margin: 0 12%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.6em;
+        margin: 0 0;
         font-family: 'Sofia Sans';
         color: rgb(255, 255, 255);
-    }
-    .port-pieces li img:hover{
-        filter: blur(0);
-        transform: scale(1.4);
-        transition: ease 260ms;
-        position: inline-block;
-        z-index: 1000;
-        box-shadow: 2px 2px 6px rgba(23,23,23,.4);
     }
 }
 
@@ -435,7 +420,7 @@ button:hover{
     }
     .work{
         font-size: 1.2rem;
-        max-width: 80%;
+        max-width: 80vw;
         text-align: center;
     }
     .skills-icons{
@@ -447,11 +432,8 @@ button:hover{
     .mug{
         width: 220px;
         height: 220px;
-        border: 10px solid dodgerblue;
+        /* border: 10px solid dodgerblue; */
         box-shadow: 2px 2px 6px rgba(23,23,23,.4);
-    }
-    .port-pieces p{
-        display: none;
     }
 }
 
@@ -459,13 +441,16 @@ button:hover{
     .intro {
         flex-direction: column;
       }
+    .div-2{
+        justify-content: center;
+    }
     h1{
-        font-size: 1.9rem;
+        font-size: 2rem;
         letter-spacing: -.05rem;
-        margin: 12px 0;
+        margin: 0 0;
     }
     h2{
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
     h3{
         font-size: 1rem;
@@ -481,18 +466,6 @@ button:hover{
         flex-direction: column;
         gap: .5rem;
     }
-    .port-pieces:last-child{
-        margin-bottom: 12px;
-    }
-    .port-pieces li {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    .port-pieces li img{
-        width: 124px;
-        margin: 0 16px;
-    }
     .menuNav{
         max-width: 214px;
     }
@@ -504,6 +477,7 @@ button:hover{
     .work{
         margin: 16px 0;
         font-size: 1rem;
+        width: 96vw;
     }
     .pronounce{
         font-size: .8rem;
@@ -516,20 +490,51 @@ button:hover{
         text-align: center;
     }
     .mug{
-        width: 180px;
-        height: 180px;
-        border: 10px solid dodgerblue;
+        width: 140px;
+        height: 140px;
+        border: 6px solid rgb(22,22,22);
         box-shadow: 2px 2px 6px rgba(23,23,23,.4);
      }
      .stay{
-        font-size: 1.4rem;
-        margin: 12px 0;
+        font-size: 1.2rem;
+        margin: 8px 0;
      }
      .nav button{
         top: 26px;
         left: 26px;
      }
-     .skills-text{
+     .skills-text h3{
+        font-size: .9rem;
         line-height: 1.08rem;
+     }
+     .contact-icons{
+        display: flex;
+        flex-direction: column;
+     }
+     .contact-icons h3{
+        margin: 4px 0;
+     }
+     .contact-icons a{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 66vw;
+        background-color: dodgerblue;
+        border: 2px solid rgb(22,22,22);
+        padding: 6px 0;
+        border-radius: 8px 8px;
+     }
+     .contact-icons a:hover{
+        background-color: dodgerblue;
+        transform: scale(1.01);
+        box-shadow: 2px 2px 2px rgb(22,22,22);
+     }
+     .bars{
+        display: flex;
+        flex-direction: row;
+     }
+     .app-wrap{
+        justify-content: center;
      }
 }

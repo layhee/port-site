@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { FaRegSmile, FaCog, FaLaptopCode, FaRegHandSpock, FaBars, FaRegTimesCircle } from "react-icons/fa"
+import { FaRegSmile, FaCog, FaListAlt, FaRegHandSpock, FaBars, FaRegTimesCircle } from "react-icons/fa"
 
 const Nav = () => {
     const [navbarOpen, setNavbarOpen] = useState(false)
@@ -17,10 +17,10 @@ const Nav = () => {
                 <FaRegHandSpock className="beat"/><a href="#intro">Hello</a>
             </li>
             <li>
-               <FaCog className="spin"/>  <a href="#skills">Skills</a>
+               <FaListAlt className="beat"/>  <a href="#skills">Skills</a>
             </li>
             <li>
-                <FaLaptopCode className="beat"/> <a href="#work">Work</a>
+                <FaCog className="spin"/> <a href="#work">Work</a>
             </li>
             <li>
                 <FaRegSmile className="spin"/><a href="#about"> About</a>

@@ -1,28 +1,29 @@
 import { RiArrowDownCircleLine, RiArrowUpCircleLine } from "react-icons/ri"
+import { FaCameraRetro, FaVideo, FaLaptopCode, FaRuler } from "react-icons/fa"
 
 const Portfolio = (props) => {
 
     return (
         <>        
         <div className="work">
-        <h1>Work I've done:</h1>
+        <h1>What I love doing</h1>
                 <dd className="port-pieces">
-                    <li> 
-                        <a href="https://dev.lehi.work/" target="_blank" rel="noreferrer"><img src="https://dev.lehi.work/img/dictionary-full.png" alt="dicitonary game"/></a>
-                        <a href="https://dev.lehi.work/" target="_blank" rel="noreferrer"><h2><span 
-                        className="yellow">Dictionary Game</span></h2></a>
-                        
-                        <p>First major project in my General Assembly Software Engineering Immersive course. The site uses <span className="yellow">jQuery</span> to fetch a 3rd party <span className="yellow">API</span> in an interactive way. I built this Dictionary Game using two API's to give the user a random definition, part of speech, and etymology of that word for them to guess.</p>
+                    <li>
+                        <a href="https://github.com/layhee" target="_blank" rel="noreferrer"><FaLaptopCode/><h2><span 
+                        className="yellow">Full Stack Web Development</span></h2></a> 
+                        <p>Take a look at my <span className="blue">React</span>, <span className="blue">Svelte</span>, and <span className="blue">Django</span> code on Github!</p>
                     </li>
                     <li>
-                        <a href="https://rigs-n-routes.herokuapp.com/" target="_blank" rel="noreferrer"><img src="https://dev.lehi.work/scr-index.png" alt="rigs and routes"/></a>
-                        <a href="https://rigs-n-routes.herokuapp.com/" target="_blank" rel="noreferrer"><h2 className="yellow">Rigs + Routes</h2></a>
-                        <p>The second project in my General Assembly Software Engineering course. The goal was to implement full CRUD functionality using <span className="yellow">Mongoose</span>, <span className="yellow">Express</span>, <span className="yellow">Node</span>, and <span className="yellow">MongoDB</span> to store user data. Users are able to add their bikepacking bikes and rides/routes taken on them.</p>
+                        <a href="http://www.lehi.work" target="_blank" rel="noreferrer"><FaRuler/><h2 className="yellow">Web + Graphic Design</h2></a>
+                        <p>The <span className="blue">UI</span> of my web projects and some <span className="blue">static print</span> work I've done.</p>
                     </li>
                     <li>                        
-                        <a href="https://rummage-rumg.netlify.app/" target="_blank" rel="noreferrer"><img src="https://dev.lehi.work/img/rummage.png" alt="rummage app"/></a>
-                        <a href="https://rummage-rumg.netlify.app/" target="_blank" rel="noreferrer"><h2 className="yellow">Rummage</h2></a>
-                        <p>Third General Assembly project. First collaborative project where my team of three delegated roles amongst ourselves and built a community marketplace app using <span className="yellow">Mongoose</span>, <span className="yellow">Express</span>, <span className="yellow">React</span>, and <span className="yellow">Node</span>. Also built with Pico.css and </p>
+                        <a href="http://www.lehi.work/film" target="_blank" rel="noreferrer"><FaVideo/><h2 className="yellow">Film + Video</h2></a>
+                        <p>I love working with <span className="blue">motion graphics</span> and <span className="blue">video</span>. Particularly <span className="blue">Documentary</span>.</p>
+                    </li>
+                    <li>                        
+                        <a href="http://www.lehi.work/photo" target="_blank" rel="noreferrer"><FaCameraRetro/><h2 className="yellow">Photography</h2></a>
+                        <p>Though I've done a couple shoots as an <span className="blue">REI model</span>, I much prefer being <span className="blue">behind the camera</span>.</p><br/>
                     </li>
                 </dd>
         </div>

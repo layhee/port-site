@@ -5,7 +5,6 @@
 *{
     margin: 0 0;
     padding: 0 0;
-    box-sizing: border-box;
 }
 html {
     scroll-behavior: smooth;
@@ -17,14 +16,11 @@ body {
     align-items: stretch;
     scroll-behavior: smooth;
 }
-
-:where(h1, h2, h3, h4) {
-    color: rgb(255, 255, 255);
-}
 h1{
     font-family: "brother-1816-printed", sans-serif;
     font-weight: 500;
-    font-size: 4rem;
+    font-size: 6rem;
+    line-height: 6rem;
     letter-spacing: -.10rem;
     margin: 16px 0;
 }
@@ -56,13 +52,24 @@ li{
     justify-content: center;
     align-items: flex-start;
     font-family: 'Sofia Sans', mono;
-    font-size: 2rem;
+    font-size: 3.2rem;
     color: rgb(255, 255, 255);
     margin: 32px 0;
 }
 .next a:hover{
     color:rgb(255, 255, 255);
     transition: ease 260ms;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    outline: 15px solid #fff;
+    outline-offset: -15px;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
 :where(a, a h3){
     text-decoration: none;
@@ -84,21 +91,32 @@ svg:hover{
 .mug{
     width: 280px;
     height: 280px;
-    border-radius: 24%;
+    border-radius: 50%;
     margin: 18px 28px;
-    border: 16px solid dodgerblue;
-    box-shadow: 4px 4px 0 rgba(23,23,23,1);
+    border: 16px solid rgb(255, 255, 255);
     background-image: url(/public/img/head-cropped.jpg);
     background-size: contain;
+    box-shadow: 0px 0px 0 rgba(23,23,23,1);
+    transition: ease 260ms;
+    filter: opacity(.9);
+}
+.mug:hover{
+    filter: opacity(1);
+	transform-origin: center;
+    transition: ease 260ms;
 }
 .skills-text{
     display: flex;
-    align-items: center;
     flex-direction: column;
-    width: 80vw;
-    margin: 0 32px;
+    max-width: 896px;
+    margin: 0 55px;
     text-shadow: 2px 2px 6px rgba(22,22,22, .5);
     transition: ease 323ms;
+    color:rgb(255, 255, 255);
+}
+.skills-text h1{
+    display: flex;
+    justify-content: center;
 }
 .tldr :not(.yellow, .next, .stay){
     color: transparent;
@@ -117,7 +135,8 @@ svg:hover{
     box-shadow: -2px 3px 3px rgba(22, 87, 109, 0.4);
     transition: ease 100ms;
     cursor: pointer;
-}
+    width: fit-content;
+}   
 .stay:active{
     transform: rotate(6deg);
     box-shadow: 3px 2px 0 rgb(22,22,22);
@@ -164,31 +183,41 @@ p{
     color: #fff;
 }
 .div-1{
-    background: linear-gradient(-120deg, #ff2a00c5, #f8ba2b, #f97f14);
+    background: linear-gradient(-160deg, #ff2a00be, #f8bb2be1, #f97f14cc), url(/public/img/grain-1.png);
     background-size: 250% 250%;    
+    background-size: cover;
+    display: flex;
 }
 .div-2{
-    background: linear-gradient(-120deg, #ec0cc6, #de14d0, #9a0bf4);
-    background-size: 250% 250%;  
-}
-.div-3{
-    background: url(/public/img/bike-bg.jpg) no-repeat center center fixed;
+    /* background: linear-gradient(-120deg, #ec0cc7c4, #de14d1c0, #9b0bf4b0), url(/public/img/grain-1.png); */
+    background: url(/public/img/grad-bg.jpg) no-repeat top center fixed;
+    background-size: 250% 250%;
     background-size: cover;
-}
-.div-4{
-    background: linear-gradient(to right top, #005a9c, #055fa1, #0b64a7, #106aac, #156fb2, #127abb, #1285c4, #1590cd, #1ea4da, #31b8e6, #47ccf1, #5fe0fb);
-    background-size: 250% 250%; 
-}
-.app-wrap{
     display: flex;
     flex-direction: column;
+}
+.div-3{
+    background: url(/public/img/existed.jpg) no-repeat top center fixed;
+    background-size: cover;
+    justify-content: center;
+}
+.div-4{
+    background: linear-gradient(to right top, #005b9cac, #0560a1b3, #0b63a7b1, #106bacba, #156eb2ba, #127abbb4, #1286c4bd, #1590cdbb, #1ea5daaf, #31b9e6ad, #47ccf1a1, #5fe1fbc7), url(/public/img/grain-1.png);
+    background-size: 250% 250%;
+    background-size: cover;
+}
+.app-wrap{
+    min-height: 100vh;
+    scroll-snap-align: center;
     justify-content: space-evenly;
     height: 100vh;
     align-items: center;
+    justify-content: center;
     outline: 15px solid #fff;
     outline-offset: -15px;
     scroll-behavior: smooth;
-    overflow: scroll;
+    overflow-y: scroll;
+    z-index: 2;
 }
 .nav{
     position: fixed;    
@@ -262,21 +291,22 @@ p{
     align-items: center;
     margin: 0 32px;
     text-shadow: 2px 2px 6px rgba(22,22,22, .2);
+    color:rgb(255, 255, 255)
 }
 .about{
-    /* background: rgba(0,0,0,.6); */
+    color:rgb(255, 255, 255);
     text-shadow: 2px 2px 6px rgb(22,22,22);
-    margin: 12px 16px;
+    margin: 12px auto;
     padding: 46px 46px;
     border-radius: 4px 4px;
-    max-width: 1060px;
+    max-width: 966px;
 }
 .work{
-    max-width: 860px;
-    /* margin: 32px 32px; */
+    max-width: 80%;
+    margin: 0 auto;
     font-family: 'Sofia Sans';
     font-size: 1.6rem;
-    color:rgb(255, 255, 255)
+    color:rgb(255, 255, 255);
 }
 .purple{
     color: rgb(188, 98, 251);
@@ -309,29 +339,41 @@ a:hover.red{
     text-shadow: 2px 2px 2px rgba(52, 52, 52, .6);
 }
 .port-pieces{
-    display: flex;
-    flex-direction: column;
-    gap: 1.6em;
+    display: grid;
+    gap: 1.2em;
     font-family: 'Sofia Sans';
+    font-size: 1.1rem;
     color: rgb(255, 255, 255);
+    z-index: -20;
 }
 .port-pieces li a{
-    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    color:rgb(252, 214, 45);
+    transform: scale(.95);
+}
+.port-pieces li a:hover{
+    color:rgb(255, 255, 255);
+    transform: scale(1.05);
 }
 .bars{
     display: none;
 }
-li img{
+.port-pieces li img{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 12px auto;
-    border-radius: 6px 6px;
-
+    border-radius: 8px 8px;
+    box-shadow: 2px 2px 6px rgba(23,23,23,.4);
+    transform: scale(.95);
+    /* opacity: .75; */
+    transition: ease 260ms;
+    margin-bottom:4%;
+    z-index: -200;
+    position: relative;
 }
 button{
     background-color: transparent;
@@ -353,21 +395,20 @@ button:hover{
 .work h1{
     display: flex;
     justify-content: center;
-    margin-bottom: 22px;
+    margin: 4% 0;
 }
-@media screen and (min-width: 1266px){
+@media (788px <= width <= 2200px){
     .port-pieces{
-        max-width: 1266px;
-        gap: 1.6em;
+        gap: 1.2em;
         grid-template-columns: repeat(3, 1fr);
     }
 }
-@media screen and (max-width: 989px) {
+@media (width <= 787px) {
     .intro {
         grid-template-columns: repeat(1, 1fr);
     }
     h1{
-        font-size: 2.6rem;
+        font-size: 6rem;
         letter-spacing: -.05rem;
     }
     h2{
@@ -394,7 +435,7 @@ button:hover{
     .work{
         font-size: 1.4rem;
         max-width: 80vw;
-        text-align: center;
+        justify-content: center;
     }
     .port-pieces{
         display: flex;
@@ -415,7 +456,7 @@ button:hover{
         grid-template-columns: repeat(6, 1fr);
     }
     h1{
-        font-size: 2.2rem;
+        font-size: 3.6rem;
         letter-spacing: -.05rem;
     }
     .work{
@@ -444,8 +485,12 @@ button:hover{
     .div-2{
         justify-content: center;
     }
+    .sm-h1{
+        font-size: 4rem;
+    }
     h1{
         font-size: 2rem;
+        line-height: 3rem;
         letter-spacing: -.05rem;
         margin: 0 0;
     }
@@ -456,7 +501,7 @@ button:hover{
         font-size: 1rem;
     }
     .next{
-        font-size: 1.4rem;
+        font-size: 2.4rem;
         margin: 6px 0;
         bottom: 0;
         align-items: flex-end;
@@ -474,17 +519,9 @@ button:hover{
         line-height: 1rem;
         font-weight: 100;
    }
-    .work{
-        margin: 16px 0;
-        font-size: 1rem;
-        width: 96vw;
-    }
     .pronounce{
         font-size: .8rem;
         margin: 8px 0;
-    }
-    .about{
-        padding: 0 26px;
     }
     .intro-type h3{
         text-align: center;
@@ -492,7 +529,7 @@ button:hover{
     .mug{
         width: 140px;
         height: 140px;
-        border: 6px solid rgb(22,22,22);
+        border: 8px solid rgb(255, 255, 255);
         box-shadow: 2px 2px 6px rgba(23,23,23,.4);
      }
      .stay{
@@ -519,16 +556,17 @@ button:hover{
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        width: 66vw;
+        width: 50vw;
         background-color: dodgerblue;
         border: 2px solid rgb(22,22,22);
         padding: 6px 0;
         border-radius: 8px 8px;
+        margin: 2px 0;
+        box-shadow: 2px 2px 2px rgb(22,22,22);
      }
      .contact-icons a:hover{
         background-color: dodgerblue;
         transform: scale(1.01);
-        box-shadow: 2px 2px 2px rgb(22,22,22);
      }
      .bars{
         display: flex;

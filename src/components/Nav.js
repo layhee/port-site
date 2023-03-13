@@ -20,7 +20,7 @@ const Nav = () => {
                <FaListAlt className="beat"/>  <a href="#skills">Skills</a>
             </li>
             <li>
-                <FaCog className="spin"/> <a href="#work">Work</a>
+                <FaCog className="spin"/> <a href="#work">Projects</a>
             </li>
             <li>
                 <FaRegSmile className="spin"/><a href="#about"> About</a>

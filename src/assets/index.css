@@ -345,6 +345,7 @@ a:hover.red{
     font-size: 1.1rem;
     color: rgb(255, 255, 255);
     z-index: -20;
+    grid-template-columns: repeat(3, 1fr);
 }
 .port-pieces li a{
     flex-direction: row;
@@ -395,7 +396,7 @@ button:hover{
 .work h1{
     display: flex;
     justify-content: center;
-    margin: 4% 0;
+    margin: 4% 0 4% 0;
 }
 @media (788px <= width <= 2200px){
     .port-pieces{
@@ -499,6 +500,9 @@ button:hover{
     }
     h3{
         font-size: 1rem;
+    }
+    .work h1{
+        margin: 10% 0 4% 0;
     }
     .next{
         font-size: 2.4rem;

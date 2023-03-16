@@ -27,6 +27,10 @@ const Portfolio = (props) => {
                         <h2><a href="https://www.lehi.work/film" target="_blank" rel="noreferrer">Filmography</a></h2>
                         <p>From helping document bike races in <a href="https://www.youtube.com/watch?v=CGTdWSWJbBY&t=1102s" target="_blank" rel="noreferrer"><span className="black">Sierra Leone</span>,</a> to shooting <a href="https://www.youtube.com/watch?v=bo__HLUr4ZQ" target="_blank" rel="noreferrer"><span className="black">bike camping ride recaps</span>,</a> I love making movies.</p>
                     </li>
+                    <li><a href="https://www.lehi.work" target="_blank" rel="noreferrer"><img src="img/design-scr.jpg" alt="screenshot"/></a>                       
+                        <h2><a href="https://www.lehi.work" target="_blank" rel="noreferrer">Graphic Design</a></h2>
+                        <p>My college major & first  <span className="black">creative professional skillset</span>.</p>
+                    </li>
                 </dd>
         </div>
         <div className="next">

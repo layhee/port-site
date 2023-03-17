@@ -5,7 +5,7 @@ const Portfolio = (props) => {
     return (
         <>        
         <div className="work">
-        <h1>Projects</h1>
+        <h1><a href="#work">Projects</a></h1>
                 <dd className="port-pieces">
                     <li><a href="https://routr.herokuapp.com/" target="_blank" rel="noreferrer"><img src="img/routr-scr.jpg" alt="screenshot"/></a>
                         <h2><a href="https://routr.herokuapp.com/" target="_blank" rel="noreferrer">Routr Adventure Planner</a></h2>

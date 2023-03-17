@@ -14,7 +14,7 @@ const Skills = () => {
   return (
     <>
     <div id="skills" className={`skills-text${toggleClassCheck}`}>
-         <h1>Skillset</h1>
+         <h1><a href="#skills">Skillset</a></h1>
          <h2 className="blue">Languages</h2>
          <h3><span className="yellow">JavaScript</span>, SQL, Python, PHP, HTML, <span className="yellow">CSS</span>, Spanish (fluent), <span className="yellow">French</span> (beginner)</h3>
          <h2 className="blue">Frameworks</h2>

@@ -7,6 +7,10 @@ const Portfolio = (props) => {
         <div className="work">
         <h1><a href="#work">Projects</a></h1>
                 <dd className="port-pieces">
+                    <li><a href="https://sveltepedalian.vercel.app/" target="_blank" rel="noreferrer"><img src="img/svelte-scr.jpg" alt="screenshot"/></a>
+                        <h2><a href="https://sveltepedalian.vercel.app/" target="_blank" rel="noreferrer">Sesquipedalian Typer</a></h2>
+                        <p>A typing game using only words with many syllables. Built with <span className="black">SvelteKit</span>, written in <span className="black">Typescript</span>, deployed on <span className="black">Vercel</span>.</p>
+                    </li>
                     <li><a href="https://routr.herokuapp.com/" target="_blank" rel="noreferrer"><img src="img/routr-scr.jpg" alt="screenshot"/></a>
                         <h2><a href="https://routr.herokuapp.com/" target="_blank" rel="noreferrer">Routr Adventure Planner</a></h2>
                         <p>A place to help you plan your next outdoor trip. Built with <span className="black">Django</span>, written in <span className="black">Python</span>, deployed on <span className="black">Heroku</span>.</p>
@@ -23,10 +27,7 @@ const Portfolio = (props) => {
                         <h2><a href="https://www.lehi.work/photo" target="_blank" rel="noreferrer">Photography</a></h2>
                         <p>I shoot & document all sorts of things. Sometimes <span className="black">weddings</span> for friends & family. I never leave home <span className="black">without a camera</span>.</p>
                     </li>
-                    <li><a href="https://www.lehi.work/film" target="_blank" rel="noreferrer"><img src="img/yt-scr.jpg" alt="screenshot"/></a>                       
-                        <h2><a href="https://www.lehi.work/film" target="_blank" rel="noreferrer">Filmography</a></h2>
-                        <p>From helping document bike races in <a href="https://www.youtube.com/watch?v=CGTdWSWJbBY&t=1102s" target="_blank" rel="noreferrer"><span className="black">Sierra Leone</span>,</a> to shooting <a href="https://www.youtube.com/watch?v=bo__HLUr4ZQ" target="_blank" rel="noreferrer"><span className="black">bike camping ride recaps</span>,</a> I love making movies.</p>
-                    </li>
+                    
                     <li><a href="https://www.lehi.work" target="_blank" rel="noreferrer"><img src="img/design-scr.jpg" alt="screenshot"/></a>                       
                         <h2><a href="https://www.lehi.work" target="_blank" rel="noreferrer">Graphic Design</a></h2>
                         <p>My college major & first  <span className="black">creative professional skillset</span>.</p>

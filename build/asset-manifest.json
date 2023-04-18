@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.d3f79e76.css",
-    "main.js": "/static/js/main.e8d08570.js",
+    "main.js": "/static/js/main.aedadea4.js",
     "static/media/grad-bg.jpg": "/static/media/grad-bg.4fc72f4f9c8a0229a673.jpg",
     "static/media/existed.jpg": "/static/media/existed.33cce889f61680eb2ed8.jpg",
     "static/media/grain-1.png": "/static/media/grain-1.1af2e89ada09f3fcfd5c.png",
     "static/media/head-cropped.jpg": "/static/media/head-cropped.45ff57f258a6ebc3836b.jpg",
     "index.html": "/index.html",
     "main.d3f79e76.css.map": "/static/css/main.d3f79e76.css.map",
-    "main.e8d08570.js.map": "/static/js/main.e8d08570.js.map"
+    "main.aedadea4.js.map": "/static/js/main.aedadea4.js.map"
   },
   "entrypoints": [
     "static/css/main.d3f79e76.css",
-    "static/js/main.e8d08570.js"
+    "static/js/main.aedadea4.js"
   ]
 }

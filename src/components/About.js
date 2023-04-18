@@ -11,6 +11,9 @@ const About = (props) => {
                 <h3>I've recently completed a <span className="yellow">Software Engineering</span> immersive bootcamp through 
                 <a target="_blank" rel="noreferrer" href="https://generalassemb.ly/education/software-engineering-immersive" className="yellow"> General Assembly</a> learning <span className="yellow">Full Stack Web Development</span>.</h3>
                 <h3>I love <span className="yellow">photography</span>, particularly <span className="yellow">film.</span>  I love <span className="yellow">camping</span> on my bike, <span className="yellow">building</span> up <span className="yellow">personal computers</span>, and a good green chile <span className="yellow">smothered</span> burrito.</h3>
+                <div className="center">
+                <a href="/resume-c-Lehi-Cano-2023.pdf" target="_blank"><button className="button stay">Resumé</button></a>
+                </div>
             </div>
             <div className="next">
                 <a href="#intro"><RiArrowUpCircleLine className="fa-beat"/></a>

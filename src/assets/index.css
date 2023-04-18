@@ -273,7 +273,6 @@ p{
   a {
     text-decoration: none;
   }
-  
   .menuNav li:first-child {
     margin-top: 8rem;
   }
@@ -329,6 +328,11 @@ p{
 .typography{
     font-family: 'alkaline caps', script;
     font-size: 1.6rem;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 a:hover.yellow{
     color:rgb(255, 167, 14);

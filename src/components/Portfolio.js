@@ -15,8 +15,8 @@ const Portfolio = (props) => {
                         <h2><a href="https://routr.herokuapp.com/" target="_blank" rel="noreferrer">Routr Adventure Planner</a></h2>
                         <p>A place to help you plan your next outdoor trip. Built with <span className="black">Django</span>, written in <span className="black">Python</span>, deployed on <span className="black">Heroku</span>.</p>
                     </li>
-                    <li><a href="https://rummage-rumg.netlify.app/" target="_blank" rel="noreferrer"><img src="img/rumg-scr.jpg" alt="screenshot"/></a>
-                        <h2><a href="https://rummage-rumg.netlify.app/" target="_blank" rel="noreferrer">Rummage Marketplace</a></h2>
+                    <li><a href="https://rummage-frontend.vercel.app/" target="_blank" rel="noreferrer"><img src="img/rumg-scr.jpg" alt="screenshot"/></a>
+                        <h2><a href="https://rummage-frontend.vercel.app/" target="_blank" rel="noreferrer">Rummage Marketplace</a></h2>
                         <p>An <span className="black">app</span> for listing unwanted items. Built with <span className="black">React</span> and <span className="black">MongoDB</span>. Deployed on <span className="black">Netlify</span>.</p>
                     </li>
                     <li><a href="https://rigs-n-routes.herokuapp.com/" target="_blank" rel="noreferrer"><img src="img/rigs-scr.jpg" alt="screenshot"/></a>                       

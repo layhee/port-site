@@ -356,29 +356,26 @@ a:hover.red{
     align-items: center;
     justify-content: center;
     color:rgb(252, 214, 45);
-    transform: scale(.95);
-}
-.port-pieces li a:hover{
-    color:rgb(255, 255, 255);
-    transform: scale(1.05);
 }
 .bars{
     display: none;
 }
 .port-pieces li img{
-    width: 100%;
+    width: 95%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 12px auto;
     border-radius: 8px 8px;
     box-shadow: 2px 2px 6px rgba(23,23,23,.4);
-    transform: scale(.95);
-    /* opacity: .75; */
-    transition: ease 260ms;
     margin-bottom:4%;
     z-index: -200;
     position: relative;
+    transform: scale(.95);
+    transition: ease 260ms;
+}
+.port-pieces li img:hover{
+    transform: scale(1.05);
 }
 button{
     background-color: transparent;
